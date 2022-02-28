@@ -47,12 +47,10 @@ app.get("/todos/:id", async (req, res) => {
     }
 });
 
-
-
-
+//update a todo
+app.put("/todos/:id")
 
 //delete a todo
-
 app.listen(5000, () => {
     console.log("server has started on port 5000");
 });
