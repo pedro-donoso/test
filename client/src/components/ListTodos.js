@@ -41,7 +41,7 @@ const ListTodos = () => {
                     <tr>
                         <td>{todo.description}</td>
                         <td>Editar</td>
-                         <td>Borrar</td>
+                         <td><button className="btn btn-danger">Borrar</button></td>
                         </tr>
                 ))}
             </tbody>
