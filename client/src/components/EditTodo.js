@@ -1,6 +1,24 @@
 import React, { Fragment, useState } from "react";
 const EditTodo = ({ todo }) => {
     const [description, setDescription] = useState(todo.description);
+
+    //edit description function
+
+    const updateDescription = async (e) => {
+        e.preventDefault();
+        try {
+            const body = { description };
+            const response = await fetch(`http://localhost:5000/todos/${todo.todo_id}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(body)
+            })
+            console.log(response);
+        } catch (err) {
+            console.error(err.message);
+        }
+    }
+
     return (
         <Fragment>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target={`#id${todo.todo_id}`}>
@@ -21,11 +39,11 @@ const EditTodo = ({ todo }) => {
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body"><input type='text' className="form-control" value={description} />
+                        <div class="modal-body"><input type='text' className="form-control" value={description} onChange={e => setDescription(e.target.value)}/>
       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Editar</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal" onClick={e => updateDescription(e)}>Editar</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
