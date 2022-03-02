@@ -3,11 +3,16 @@ const EditTodo = ({ todo }) => {
     const [description, setDescription] = useState(todo.description);
     return (
         <Fragment>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target={`#id${todo.todo_id}`}>
+ Edit
 </button>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            {/*
+            id = id10 
+            */}
+            
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+                id={`id${todo.todo_id}`}>
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -16,11 +21,11 @@ const EditTodo = ({ todo }) => {
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        ...
+      <div class="modal-body"><input type='text' className="form-control" value={description} />
+      
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Editar</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
