@@ -22,7 +22,7 @@ const EditTodo = ({ todo }) => {
     return (
         <Fragment>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target={`#id${todo.todo_id}`}>
- Edit
+ Editar
 </button>
 
             {/*
