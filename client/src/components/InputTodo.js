@@ -1,7 +1,6 @@
 import React, {Fragment, useState} from "react";
 const InputTodo = () => {
     const [description, setDescription] = useState("");
-
     const onsubmitForm = async (e) => {
         e.preventDefault();
         try {
@@ -16,7 +15,6 @@ const InputTodo = () => {
             console.error(err.message)
         }
     }
-
     return (
         <Fragment>
             <h1 className="text-center mt-5">Pern Todo List</h1>
@@ -27,7 +25,7 @@ const InputTodo = () => {
                     value={description}
                 onChange={e => setDescription(e.target.value)}
                 />
-                <button className="btn btn-success">Add</button>
+                <button className="btn btn-success">Nueva Tarea</button>
             </form>
         </Fragment>
     );

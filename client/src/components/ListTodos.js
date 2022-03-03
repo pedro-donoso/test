@@ -10,13 +10,11 @@ const ListTodos = () => {
             const deleteTodo = await fetch(`http://localhost:5000/todos/${id}`, {
                 method: "DELETE"
             });
-
          setTodos(todos.filter(todo => todo.todo_id !== id))
         } catch (err) {
             console.log(err.message);
         }
     }
-
     const getTodos = async()=>{
     try {
         const response = await fetch("http://localhost:5000/todos")
@@ -29,9 +27,7 @@ const ListTodos = () => {
     useEffect(()=>{
         getTodos();
     }, []);
-
     console.log(todos);
-
     return (
         <Fragment>
         {" "}
@@ -44,11 +40,6 @@ const ListTodos = () => {
                 </tr>
             </thead>
             <tbody>
-                {/*<tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                </tr> */}
                 {todos.map(todo => (
                     <tr key={todo.todo_id}>
                         <td>{todo.description}</td>
@@ -62,5 +53,4 @@ const ListTodos = () => {
     </Fragment>
     )
 };
-
 export default ListTodos;
