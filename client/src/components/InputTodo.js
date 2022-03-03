@@ -17,7 +17,7 @@ const InputTodo = () => {
     }
     return (
         <Fragment>
-            <h1 className="text-center mt-5">Pern Todo List</h1>
+            <h1 className="text-center mt-5">Lista de Tareas</h1>
             <form className="d-flex mt-5" onSubmit={onsubmitForm}>
                 <input
                     type="text"

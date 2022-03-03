@@ -36,9 +36,9 @@ const ListTodos = () => {
         <table class="table mt-5 text-center">
             <thead>
                 <tr>
-                    <th>Descripción</th>
-                    <th>Editar</th>
-                    <th>Borrar</th>
+                    <th>Descripción tarea</th>
+                    <th>Editar tarea</th>
+                    <th>Borrar tarea</th>
                 </tr>
             </thead>
             <tbody>

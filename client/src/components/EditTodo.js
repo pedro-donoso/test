@@ -1,9 +1,7 @@
 import React, { Fragment, useState } from "react";
 const EditTodo = ({ todo }) => {
     const [description, setDescription] = useState(todo.description);
-
     //edit description function
-
     const updateDescription = async (e) => {
         e.preventDefault();
         try {
@@ -19,7 +17,6 @@ const EditTodo = ({ todo }) => {
             console.error(err.message);
         }
     }
-
     return (
         <Fragment>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target={`#id${todo.todo_id}`}>
@@ -38,7 +35,7 @@ const EditTodo = ({ todo }) => {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Editar tarea</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" onClick={()=>setDescription(todo.description)}>
           <span aria-hidden="true">&times;</span>
         </button>
@@ -47,8 +44,7 @@ const EditTodo = ({ todo }) => {
       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal" onClick={e => updateDescription(e)}>Editar</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-success" data-dismiss="modal" onClick={e => updateDescription(e)}>Editar</button>
       </div>
     </div>
   </div>
