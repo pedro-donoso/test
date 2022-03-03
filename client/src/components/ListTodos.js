@@ -7,6 +7,8 @@ const ListTodos = () => {
     //delete todo function
     const deleteTodo = async id => {
         try {
+           
+           // eslint-disable-next-line
             const deleteTodo = await fetch(`http://localhost:5000/todos/${id}`, {
                 method: "DELETE"
             });
@@ -45,6 +47,7 @@ const ListTodos = () => {
                         <td>{todo.description}</td>
                         <td><EditTodo todo={todo} /></td>
                         <td>
+         
                             <button className="btn btn-danger" onClick={() => deleteTodo(todo.todo_id)}>Borrar</button></td>
                         </tr>
                 ))}

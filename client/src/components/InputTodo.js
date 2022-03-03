@@ -25,7 +25,7 @@ const InputTodo = () => {
                     value={description}
                 onChange={e => setDescription(e.target.value)}
                 />
-                <button className="btn btn-success">Nueva Tarea</button>
+                <button className="btn btn-success">Tarea+</button>
             </form>
         </Fragment>
     );
