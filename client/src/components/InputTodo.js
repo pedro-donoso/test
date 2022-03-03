@@ -30,5 +30,4 @@ const InputTodo = () => {
         </Fragment>
     );
 };
-
 export default InputTodo;

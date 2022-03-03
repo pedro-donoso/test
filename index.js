@@ -2,13 +2,10 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
-
 //middleware
 app.use(cors());
 app.use(express.json());
-
 //ROUTES//
-
 //create a todo
 app.post("/todos", async(req, res) => {
     try {
@@ -22,7 +19,6 @@ app.post("/todos", async(req, res) => {
         console.log(err.message);
     }
 });
-
 //get all todos
 app.get("/todos", async(req, res) => {
     try {
@@ -32,7 +28,6 @@ app.get("/todos", async(req, res) => {
         console.log(err.message);
     }
 })
-
 //get a todo
 app.get("/todos/:id", async (req, res) => {
     try {
@@ -40,13 +35,11 @@ app.get("/todos/:id", async (req, res) => {
         const todo = await pool.query("SELECT * FROM todo WHERE todo_id = $1", [
             id
         ]);
-
         res.json(todo.rows[0])
     } catch (err) {
         console.log(err.message);
     }
 });
-
 //update a todo
 app.put("/todos/:id", async (req, res) => {
     try {
@@ -61,7 +54,6 @@ app.put("/todos/:id", async (req, res) => {
         console.error(err.message);
     }
 });
-
 //delete a todo
 app.delete("/todos/:id", async (req, res) => {
     try {
@@ -74,9 +66,7 @@ app.delete("/todos/:id", async (req, res) => {
         console.log(err.message);
     }
 })
-
-
 app.listen(5000, () => {
-    console.log("el servidor se ha inciado en el puerto 5000");
+    console.log("el servidor se ha iniciado en el puerto 5000");
 });
 
