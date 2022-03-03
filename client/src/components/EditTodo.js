@@ -8,7 +8,8 @@ const EditTodo = ({ todo }) => {
         e.preventDefault();
         try {
             const body = { description };
-            const response = await fetch(`http://localhost:5000/todos/${todo.todo_id}`, {
+          // eslint-disable-next-line     
+          const response = await fetch(`http://localhost:5000/todos/${todo.todo_id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body)
@@ -29,7 +30,8 @@ const EditTodo = ({ todo }) => {
             id = id10 
             */}
             
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+          // eslint-disable-next-line
                 id={`id${todo.todo_id}`}>
   <div class="modal-dialog" role="document">
     <div class="modal-content">

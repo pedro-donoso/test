@@ -45,7 +45,7 @@ const ListTodos = () => {
                         <td>{todo.description}</td>
                         <td><EditTodo todo={todo} /></td>
                         <td>
-                            <button className="btn btn-danger" onClick={() => deleteTodo(todo.todo_id)}>Borrar</button></td>
+                        // eslint-disable-next-line    <button className="btn btn-danger" onClick={() => deleteTodo(todo.todo_id)}>Borrar</button></td>
                         </tr>
                 ))}
             </tbody>
