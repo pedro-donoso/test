@@ -1,3 +1,6 @@
+![vista](https://user-images.githubusercontent.com/68760595/156808903-8dc7ac80-2102-4f4f-bcb7-50148952b3cb.PNG)
+
+
 ### PostgreSQL access
 
 ![database](https://user-images.githubusercontent.com/68760595/156799078-2df75d40-6eee-4a10-abc5-c42a5de392a7.PNG)
@@ -42,4 +45,10 @@
 7. Follow link:
 
 ![start](https://user-images.githubusercontent.com/68760595/156797678-b6d9e108-ea7d-470a-ad4e-d1f90bed4f33.PNG)
+
+8. Review in PSQL:
+
+![psql](https://user-images.githubusercontent.com/68760595/156810502-015616b3-ed09-4f44-a3ef-d14c4c3ac3e8.PNG)
+
+
 
