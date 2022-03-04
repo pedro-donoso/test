@@ -32,5 +32,9 @@
 
 `npm start`
 
+![npm](https://user-images.githubusercontent.com/68760595/156797938-8ed9ad88-596b-405d-869a-10b9e5183592.PNG)
+
+7. Follow link:
+
 ![start](https://user-images.githubusercontent.com/68760595/156797678-b6d9e108-ea7d-470a-ad4e-d1f90bed4f33.PNG)
 
