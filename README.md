@@ -14,3 +14,10 @@
 
 ![node](https://user-images.githubusercontent.com/68760595/156791580-55d9b7b8-0f0a-450b-9d51-637d84abfb45.PNG)
 
+4. In other terminal, access to folder client:
+
+`cd client`
+
+![terminal](https://user-images.githubusercontent.com/68760595/156791909-5d0be66f-33bc-4503-8469-1a9304493947.PNG)
+
+
