@@ -22,4 +22,6 @@
 
 ![terminal](https://user-images.githubusercontent.com/68760595/156791909-5d0be66f-33bc-4503-8469-1a9304493947.PNG)
 
+5. Install React dependencies:
 
+`npm install react-scripts --save`
