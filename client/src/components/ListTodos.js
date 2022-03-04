@@ -32,13 +32,14 @@ const ListTodos = () => {
     console.log(todos);
     return (
         <Fragment>
-        {" "}
+            {" "}
+            <div class="container">
         <table class="table mt-5 text-center">
             <thead>
                 <tr>
-                    <th>Descripción tarea</th>
-                    <th>Editar tarea</th>
-                    <th>Borrar tarea</th>
+                    <th>Descripción</th>
+                    <th>Edición</th>
+                    <th>Borrado</th>
                 </tr>
             </thead>
             <tbody>
@@ -52,7 +53,8 @@ const ListTodos = () => {
                         </tr>
                 ))}
             </tbody>
-        </table>
+                </table>
+                </div>
     </Fragment>
     )
 };
