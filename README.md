@@ -1,4 +1,4 @@
-### Postgresql access
+### PostgreSQL access
 
 ![database](https://user-images.githubusercontent.com/68760595/156799078-2df75d40-6eee-4a10-abc5-c42a5de392a7.PNG)
 
