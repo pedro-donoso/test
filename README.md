@@ -25,3 +25,11 @@
 5. Install React dependencies:
 
 `npm install react-scripts --save`
+
+![scripts](https://user-images.githubusercontent.com/68760595/156793417-ddeb2d1c-c072-45d2-b5e2-9fecce6bcdc7.PNG)
+
+6. Init React project:
+
+`npm start`
+
+
