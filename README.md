@@ -46,9 +46,11 @@
 
 ![start](https://user-images.githubusercontent.com/68760595/156797678-b6d9e108-ea7d-470a-ad4e-d1f90bed4f33.PNG)
 
-8. Review in PSQL -> password: deve2024
+### In PSQL
+
+8. password: deve2024
 
 ![psql](https://user-images.githubusercontent.com/68760595/156810502-015616b3-ed09-4f44-a3ef-d14c4c3ac3e8.PNG)
 
-
+9. 
 
