@@ -48,9 +48,16 @@
 
 ### In PSQL
 
-password: deve2024
+8. Conection Postgres -> password: deve2024
 
 ![psql](https://user-images.githubusercontent.com/68760595/156810502-015616b3-ed09-4f44-a3ef-d14c4c3ac3e8.PNG)
 
-8. 
+9. Access to Database:
+
+![acceso](https://user-images.githubusercontent.com/68760595/156811807-b96a4a5e-a2e9-4a8e-82dd-e8e45860aab8.PNG)
+
+10. View table:
+
+![tabla](https://user-images.githubusercontent.com/68760595/156812256-d8918575-1207-4f86-a3a9-4cd8ba498d1f.PNG)
+
 
