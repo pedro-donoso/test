@@ -48,9 +48,9 @@
 
 ### In PSQL
 
-8. password: deve2024
+password: deve2024
 
 ![psql](https://user-images.githubusercontent.com/68760595/156810502-015616b3-ed09-4f44-a3ef-d14c4c3ac3e8.PNG)
 
-9. 
+8. 
 
