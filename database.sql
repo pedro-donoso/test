@@ -4,3 +4,5 @@ CREATE TABLE todo(
     description VARCHAR(255)
 );
 
+-- database
+
